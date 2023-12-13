@@ -1,11 +1,17 @@
 /* Alternative Box Model */
 
 * {
-  box-sizing: box-model;
+    box-sizing: box-model;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }

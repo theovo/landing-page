@@ -1,1 +1,1 @@
-Create a landing page from an image. Fonts and colors are provided.
+Create a landing page from an image using HTML and CSS. Fonts and colors are provided.
