@@ -1,0 +1,11 @@
+/* Alternative Box Model */
+
+* {
+  box-sizing: box-model;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
