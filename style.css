@@ -2,6 +2,7 @@
 
 * {
     box-sizing: box-model;
+    /* border: 1px solid black; */
 }
 
 *,
@@ -10,8 +11,269 @@
     box-sizing: inherit;
 }
 
+.h {
+    font-weight: bold;
+    /* border: 2px solid skyblue; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+
+    background-color: #1f2937;
+    color: #1f2937;
+    font-family: "Roboto";
+    font-size: 13px;
+
+    /* border-width: 0; */
+}
+
+.wide {
+    display: flex;
+
+    width: 720px;
+
+    /* border: 1px solid red; */
+}
+
+.wide.flexrow {
+    align-items: center;
+
+    /* background-color: cornflowerblue; */
+}
+
+.wide.flexcolumn {
+    flex-direction: column;
+    justify-content: center;
+
+    /* background-color: lightyellow; */
+}
+
+.header {
+    display: flex;
+
+    justify-content: center;
+
+    padding: 16px 0px;
+
+    /* border: 2px solid peachpuff; */
+    /* background-color: mediumpurple; */
+}
+
+.header .wide {
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 17px;
+    font-weight: 500;
+    color: #f9faf8;
+
+    /* border: 2px solid green; */
+}
+
+.right-links {
+    display: flex;
+    gap: 16px;
+
+    /* border: 2px solid pink; */
+}
+
 ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+a {
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
+.content {
+    flex: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    /* border: 2px solid peachpuff; */
+}
+
+.row {
+    flex: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* padding: 0px 150px; */
+    /* border: 2px solid plum; */
+}
+
+.row.one .wide {
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.row.one .left {
+    flex: 1 1 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    /* border: 2px solid lightgreen; */
+}
+
+.row.one .h {
+    font-size: 36px;
+    color: #f9faf8;
+}
+
+.row.one .b {
+    color: #e5e7eb;
+}
+
+.row.one button {
+    align-self: flex-start;
+
+    padding: 8px 24px;
+    border-radius: 8px;
+    border: 1.5px solid #3882f6;
+    background-color: #3882f6;
+    color: #f9faf8;
+}
+
+.row.one img {
+    width: 350px;
+    height: 185px;
+
+    /* border: 2px solid pink; */
+}
+
+.row.two {
+    background-color: white;
+}
+
+.row.two .wide {
+    gap: 32px;
+
+    /* align-items: stretch; */
+}
+
+.row.two .h {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.deck {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+
+    /* background-color: pink; */
+}
+
+.card {
+    display: flex;
+
+    flex-direction: column;
+    gap: 8px;
+
+    width: 124px;
+    text-align: center;
+
+    /* border: 2px solid red; */
+}
+
+.card img {
+    width: 118px;
+    height: 118px;
+    border: 3px solid #3882f6;
+    border-radius: 8px;
+}
+
+.row.two .b {
+    color: gray;
+    text-align: center;
+}
+
+.row.three {
+    background-color: #e5e7eb;
+}
+
+.row.three .wide {
+    gap: 8px;
+
+    width: 605px;
+}
+
+.row.three .b {
+    text-align: left;
+    font-size: 28px;
+    font-weight: lighter;
+    font-style: italic;
+
+    /* border: 2px solid lightgreen; */
+}
+
+.row.three .h {
+    font-size: 17px;
+    text-align: right;
+}
+
+.row.four {
+    background: white;
+}
+
+.row.four .wide {
+    justify-content: space-between;
+
+    background-color: #3882f6;
+    border-radius: 8px;
+}
+
+.row.four .left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 32px 0 32px 56px;
+
+    /* border: 2px solid lightgreen; */
+}
+
+.row.four .h {
+    color: #f9faf8;
+    font-size: 17px;
+}
+
+.row.four .b {
+    color: #e5e7eb;
+}
+
+.row.four button {
+    margin: 32px 56px 32px 0;
+    padding: 8px 24px;
+    background-color: #3882f6;
+    border: 1.5px solid #f9faf8;
+    border-radius: 8px;
+    color: #f9faf8;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+
+    padding: 24px 0px;
+
+    /* border: 2px solid peachpuff; */
+    /* background-color: lightseagreen; */
+}
+
+.footer .wide {
+    justify-content: center;
+    color: #f9faf8;
 }
